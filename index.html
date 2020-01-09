@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBA DAILY GAMES</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+
+        <script src="https://gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+
+      
+
+        <link rel="stylesheet" href="/CSS/main.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>NBA DFS</h1>
+    <button type="button" style="margin-right: 50px" class="myButton">Today</button>
+    <button type="button" style="margin-right: 50px" class="myButton">DK Projections</button>
+    <button type="button" style="margin-right: 50px" class="myButton">FD Projections</button>
+
+  </div>
+
+  <div class="tbPos">
+
+    <H4>Games for<h4 style="border:2px; border-style:solid; border-color: black; width:120px;" id="date"></h4></H4>
+
+    <table id="table" class="table tablesorter" width="90%" align="center">
+        <thead>
+          <tr>
+            <td style="background-color: rgba(29, 151, 182, 0.562)" colspan='7'>Todays Games</td>
+            <th style="background-color: rgb(240, 161, 14)" colspan='6'>DvP</th>
+          </tr>
+          <tr>
+          
+          <th class="header" width="7%">Team</th>
+          <th class="header" width="5%">Opponent</th> 
+          <th class="header" width="8%">Team Tot</th>
+          <th class="header" width="7%">Spread</th>
+          <th class="header" width="8%">Pace</th>
+          <th class="header" width="8%">OPP Pace</th>
+          <th class="header" width="8%">Pace Diff</th>
+          <th class="header" width="8%">Defense</th>
+          <th class="header" width="8%">PG</th>
+          <th class="header" width="8%">SG</th>
+          <th class="header" width="8%">SF</th>
+          <th class="header" width="8%">PF</th>
+          <th class="header" width="8%">C</th>
+          </tr>
+          </thead>
+          <tbody id="dvpRank"></tbody>
+
+          
+      </table>
+
+  
+
+  </div >
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+  crossorigin="anonymous"></script>
+  
+  <script src="/JS/jquery.tablesorter.js"></script>
+  <script src="/JS/main.js"></script>
+  
+
+</body>
+</html>
